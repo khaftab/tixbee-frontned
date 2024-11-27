@@ -7,6 +7,7 @@ import { handleError } from "~/lib/handleError";
 
 export async function action({ request }: ActionFunctionArgs) {
   console.log(process.env.HOST, "HOST");
+  console.log(process.env.HOST1, "HOST1");
 
   const body = await request.formData();
   const email = body.get("email");

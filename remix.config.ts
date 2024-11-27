@@ -4,4 +4,8 @@ export default {
   postcss: true,
   cacheDirectory: "./node_modules/.cache/remix",
   ignoredRouteFiles: [".*", "**/*.css", "**/*.test.{js,jsx,ts,tsx}"],
+  env: {
+    HOST: "http://ticket.dev",
+    HOST1: process.env.HOST,
+  },
 };
